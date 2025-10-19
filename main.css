@@ -1,0 +1,94 @@
+html, body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.yes-btn, .no-btn {
+    border: none;
+    border-radius: 0.5rem;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.yes-btn {
+    background-color: oklch(79.2% 0.209 151.711);
+    transition: background-color 0.15s ease-in-out;
+}
+.yes-btn:hover {
+    background-color: oklch(72.3% 0.219 149.579);
+}
+.no-btn {
+    background-color: oklch(71.2% 0.194 13.428);
+    transition: background-color 0.15s ease-in-out;
+}
+.no-btn:hover {
+    background-color: oklch(64.5% 0.246 16.439);
+}
+
+.heading-1 {
+    font-weight: lighter;
+    font-size: 42px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+}
+
+video {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+}
+
+.inf-heart-beat-ani-1 {
+    animation: heart-beat-animation 2s ease-out 0s infinite;
+}
+.inf-heart-beat-ani-2 {
+    animation: heart-beat-animation 1.5s ease-out 0s infinite;
+}
+.inf-heart-beat-ani-3 {
+    animation: heart-beat-animation 2.5s ease-out 0s infinite;
+}
+@keyframes heart-beat-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.inf-360-ani {
+    animation: rotate-360-animation 4s linear 0s infinite;
+}
+@keyframes rotate-360-animation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
